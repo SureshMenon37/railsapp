@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login',:sign_out => 'logout',:sign_up => 'register'}
+
   get '/terms', to: 'pages#terms'
   get '/contact', to:  'pages#contact'
   get '/about', to:  'pages#about'
   get '/privacy', to: 'pages#privacy'
   get '/home', to: 'pages#home'
-
+  
   root :to =>'pages#home'
 
 
