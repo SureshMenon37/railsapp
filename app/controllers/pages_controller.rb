@@ -20,6 +20,6 @@ class PagesController < ApplicationController
 
   def privacy
     @title = "FoodGiving | Privacy"
-
+ 
   end
 end
